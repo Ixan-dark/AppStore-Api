@@ -1,4 +1,4 @@
-import AppModel from "../Models/appModels";
+import AppModel from '../Models/appModels.js'
 import express from "express";
 import { v2 as cloudinary } from "cloudinary";
 
