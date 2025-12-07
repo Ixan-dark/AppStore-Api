@@ -50,7 +50,7 @@ router.post("/", async (req, res) => {
     }
 
     const newApp = new AppModel({
-      name: appName,
+      name,
       slogan,
       age: ageRestriction,
       description,
