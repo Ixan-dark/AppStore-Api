@@ -73,7 +73,7 @@ router.post("/", async (req, res) => {
 
 
 // Route to get all apps
-router.get("/apps", async (req, res) => {
+router.get("/all", async (req, res) => {
   try {
     const apps = await AppModel.find();
     res.status(200).json(apps);
