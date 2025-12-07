@@ -4,9 +4,9 @@ const { Schema, model } = mongoose;
 const appSchema = new Schema(
   {
     name: { type: String, required: true },
-    appImage: { type: String, required: true, match: /^data:image\/[a-z]+;base64,/ },
+    appImage: { type: String,required: true },
     slogan: { type: String, required: true },
-    appBanner: { type: String, required: true, match: /^data:image\/[a-z]+;base64,/ },
+    appBanner: { type: String,required: true },
     age: { type: String, required: true }, // changed from Number to String
     description: { type: String, required: true },
     version: { type: String, required: true },
