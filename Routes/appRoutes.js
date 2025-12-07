@@ -36,7 +36,7 @@ router.post("/", async (req, res) => {
 
     // Upload image to Cloudinary
     let appBannerUrl;
-    let appImageUrl;
+    let appImageUrl; 
     try {
       const uploadBannerResponse = await cloudinary.uploader.upload(appBanner);
       appBannerUrl = uploadBannerResponse.secure_url;
