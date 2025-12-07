@@ -13,11 +13,11 @@ cloudinary.config({
 });
 
 
-// CREATE EVENT
+// CREATE APP ROUTE
 router.post("/", async (req, res) => {
   try {
     const { 
-      appName,
+      name,
       slogan,
       ageRestriction,
       description,
