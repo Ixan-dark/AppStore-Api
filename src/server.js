@@ -18,7 +18,7 @@ app.use(morgan('combined'));
 
 // Routes setup
 app.use('/api', (req, res) =>{
-    res.send('API is working');
+    res.send('API is working again' );
 });
 
 // Start the server
