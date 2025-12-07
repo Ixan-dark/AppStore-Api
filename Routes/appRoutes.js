@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
       appBanner,
       appImage} = req.body;
 
-    if (!appName || !slogan || !ageRestriction || !description || !version || !developer || !size || !rating || !language || !appBanner || !appImage) {
+    if (!name || !slogan || !ageRestriction || !description || !version || !developer || !size || !rating || !language || !appBanner || !appImage) {
       return res.status(400).json({ message: "All fields must be provided" });
     }
 
